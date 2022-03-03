@@ -1,0 +1,55 @@
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 50px 20px;
+}
+
+.heroContainer {
+  width: 100%;
+  max-width: 1200px;
+  display: grid;
+  grid-template-columns: 60% 40%;
+  align-items: center;
+  position: relative;
+}
+
+.heroTextWrap {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.5rem;
+  max-width: 550px;
+}
+
+.heroTextWrap h1 {
+  font-size: 4rem;
+  line-height: 1.15;
+}
+
+.heroTextWrap p {
+  color: hsl(0, 0%, 75%);
+  font-size: 1.25rem;
+  margin-bottom: 1rem;
+}
+
+.heroTextWrap button {
+  padding: 0.5rem 1.5rem;
+  color: #fff;
+  background: hsl(180, 66%, 49%);
+  border: none;
+  border-radius: 25px;
+  font-weight: 700;
+}
+
+.heroImgWrap {
+  position: absolute;
+  right: -16rem;
+  height: auto;
+  width: auto;
+}
+
+.heroImgWrap img {
+  width: 100%;
+  height: auto;
+}
