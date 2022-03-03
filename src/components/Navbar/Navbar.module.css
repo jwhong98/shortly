@@ -1,0 +1,58 @@
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 80px;
+  padding: 0 20px;
+}
+
+.navContainer {
+  width: 100%;
+  max-width: 1200px;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  color: hsl(0, 0%, 75%);
+}
+
+.navLinks {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.navMenu {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.navMenu li {
+  font-size: 0.75rem;
+  font-weight: 700;
+}
+
+.user {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  font-weight: 700;
+}
+
+.user a {
+  font-size: 0.75rem;
+  text-decoration: none;
+  color: inherit;
+}
+
+.button {
+  font-size: 0.75rem;
+  background-color: hsl(180, 66%, 49%);
+  color: #fff;
+  border: none;
+  padding: 0.4rem 1.15rem;
+  border-radius: 20px;
+}
