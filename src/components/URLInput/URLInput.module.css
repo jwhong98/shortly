@@ -1,0 +1,41 @@
+.inputSection {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.inputSectionContainer {
+  width: 100%;
+  max-width: 1200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  background: hsl(257, 27%, 26%);
+  border-radius: 10px;
+  background-image: url("../../images/bg-shorten-desktop.svg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  z-index: 40;
+}
+
+form {
+  width: 100%;
+  display: flex;
+  gap: 1rem;
+}
+
+.formInput {
+  width: 80%;
+  padding: 0.5rem 1.5rem;
+  border-radius: 10px;
+}
+
+form button {
+  width: 20%;
+  color: #fff;
+  background: hsl(180, 66%, 49%);
+  border-radius: 10px;
+  font-weight: 700;
+  border: none;
+}
