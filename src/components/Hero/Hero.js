@@ -1,6 +1,7 @@
 import React from "react";
 import classes from "./Hero.module.css";
 import img from "../../images/illustration-working.svg";
+import Button from "../Button/Button";
 
 const Hero = () => {
   return (
@@ -12,7 +13,7 @@ const Hero = () => {
             Build your brand's recognition and get detailed insights on how your
             links are performing.
           </p>
-          <button>Get Started</button>
+          <Button />
         </div>
         <div className={classes.heroImgWrap}>
           <img src={img} alt="" />

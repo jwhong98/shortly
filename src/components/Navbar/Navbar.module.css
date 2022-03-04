@@ -2,7 +2,7 @@ nav {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 80px;
+  height: 100px;
   padding: 0 20px;
   margin-bottom: 4rem;
 }
@@ -10,7 +10,7 @@ nav {
 .navContainer {
   width: 100%;
   max-width: 1200px;
-  height: 80px;
+  height: 100px;
   display: flex;
   align-items: center;
   gap: 2rem;
@@ -34,6 +34,11 @@ nav {
 .navMenu li {
   font-size: 0.75rem;
   font-weight: 700;
+  cursor: pointer;
+}
+
+.navMenu li:hover {
+  color: hsl(255, 11%, 22%);
 }
 
 .user {
@@ -47,6 +52,11 @@ nav {
   font-size: 0.75rem;
   text-decoration: none;
   color: inherit;
+  cursor: pointer;
+}
+
+.user a:hover {
+  color: hsl(255, 11%, 22%);
 }
 
 .button {
@@ -56,4 +66,9 @@ nav {
   border: none;
   padding: 0.4rem 1.15rem;
   border-radius: 20px;
+  cursor: pointer;
+}
+
+.button:hover {
+  opacity: 0.5;
 }

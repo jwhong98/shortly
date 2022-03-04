@@ -31,17 +31,31 @@ footer {
   text-transform: capitalize;
 }
 
-.footerMenu li.head {
+.head {
   color: #fff;
   margin-bottom: 1rem;
+  font-weight: 700;
 }
 
-.footerMenu li {
+.item {
   color: hsl(257, 7%, 63%);
+  cursor: pointer;
+}
+
+.item:hover {
+  color: hsl(180, 66%, 49%);
 }
 
 .socialWrap {
   display: flex;
   align-items: flex-start;
   gap: 1rem;
+}
+
+.socialWrap svg {
+  cursor: pointer;
+}
+
+.socialWrap svg:hover path {
+  fill: #2acfcf;
 }

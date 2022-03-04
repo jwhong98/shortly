@@ -35,15 +35,6 @@
   margin-bottom: 1rem;
 }
 
-.heroTextWrap button {
-  padding: 0.5rem 1.5rem;
-  color: #fff;
-  background: hsl(180, 66%, 49%);
-  border: none;
-  border-radius: 25px;
-  font-weight: 700;
-}
-
 .heroImgWrap {
   position: absolute;
   right: -16rem;

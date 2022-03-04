@@ -17,6 +17,7 @@ const Statistics = () => {
   return (
     <section className={classes.statistics}>
       <div className={classes.statsContainer}>
+        <div className={classes.history}></div>
         <div className={classes.statsTextWrap}>
           <h3>Advanced Statistics</h3>
           <p>

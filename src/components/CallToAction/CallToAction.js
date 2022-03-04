@@ -1,4 +1,5 @@
 import React from "react";
+import Button from "../Button/Button";
 import classes from "./CallToAction.module.css";
 
 const CallToAction = () => {
@@ -6,7 +7,7 @@ const CallToAction = () => {
     <section className={classes.callToAction}>
       <div className={classes.callContainer}>
         <h3>Boost your links today</h3>
-        <button className={classes.callToButton}>Get Started</button>
+        <Button />
       </div>
     </section>
   );

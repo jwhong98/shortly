@@ -11,7 +11,9 @@ const URLInput = () => {
             className={classes.formInput}
             placeholder="Shorten a link here..."
           />
-          <button>Shorten It!</button>
+          <div className={classes.buttonContainer}>
+            <button>Shorten It!</button>
+          </div>
         </form>
       </div>
     </section>
