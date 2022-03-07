@@ -1,14 +1,19 @@
 .inputSection {
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   position: relative;
-  top: 3.5rem;
+  /* top: 3.5rem; */
+  padding: 0 20px;
+  background: #eff1f7;
 }
 
 .inputSectionContainer {
   width: 100%;
   max-width: 1200px;
+  position: absolute;
+  top: -3.5rem;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -36,14 +41,14 @@ form {
 .formInput:active,
 :focus {
   outline: none;
-  border: 2px solid hsl(0, 87%, 67%);
+  /* border: 2px solid hsl(0, 87%, 67%); */
 }
 
-.formInput:active,
+/* .formInput:active,
 :focus::placeholder {
   color: hsl(0, 87%, 67%);
   opacity: 0.5;
-}
+} */
 
 .buttonContainer {
   width: 20%;
@@ -64,4 +69,15 @@ form {
 
 .buttonContainer button:hover {
   opacity: 0.5;
+}
+
+.shortList {
+  position: relative;
+  width: 100%;
+  max-width: 1200px;
+  top: 4rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.75rem;
 }

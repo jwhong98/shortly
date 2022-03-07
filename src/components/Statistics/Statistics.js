@@ -1,9 +1,23 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import classes from "./Statistics.module.css";
 import { data } from "./data";
 import Card from "./Card";
 
-const Statistics = () => {
+const Statistics = (props) => {
+  // const url = "https://api.shrtco.de/v2/shorten?url=" + props.link;
+  // const [returnedData, setReturnedData] = useState([]);
+
+  // useEffect(() => {
+  //   console.log(url);
+  //   fetch(url)
+  //     .then((res) => res.json())
+  //     .then((result) => {
+  //       let short = result.result.short_link;
+  //       setReturnedData(short);
+  //       console.log(returnedData);
+  //     });
+  // }, []);
+
   const createCard = (info) => {
     return (
       <Card
