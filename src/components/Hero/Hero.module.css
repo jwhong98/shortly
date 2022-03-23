@@ -2,17 +2,18 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 50px 20px;
+  padding: 20px;
   margin-bottom: 5rem;
+  overflow: hidden;
 }
 
 .heroContainer {
   width: 100%;
   max-width: 1200px;
   display: grid;
-  grid-template-columns: 60% 40%;
+  grid-template-columns: 1fr 1fr;
   align-items: center;
-  position: relative;
+  /* position: relative; */
 }
 
 .heroTextWrap {
@@ -24,26 +25,25 @@
 }
 
 .heroTextWrap h1 {
-  font-size: 4rem;
+  font-size: 3.75rem;
   line-height: 1.15;
   color: hsl(257, 27%, 26%);
 }
 
 .heroTextWrap p {
   color: hsl(0, 0%, 75%);
-  font-size: 1.25rem;
+  font-size: 1.1rem;
   margin-bottom: 1rem;
 }
 
 .heroImgWrap {
-  position: absolute;
-  right: -16rem;
+  position: relative;
+  right: -5rem;
   height: auto;
-  width: auto;
-  display: none;
+  width: 120%;
 }
 
 .heroImgWrap img {
-  width: 100%;
-  height: auto;
+  max-inline-size: 100%;
+  block-size: auto;
 }
