@@ -2,11 +2,11 @@ import React from "react";
 import classes from "./LinkCard.module.css";
 
 const LinkCard = (props) => {
-  const copyHandler = () => {
-    let copyText = document.getElementById("shortLink");
-    navigator.clipboard.writeText(copyText.textContent);
-    console.log(copyText.textContent);
-    alert(copyText.textContent);
+  const copyHandler = (e) => {
+    const copyText = props.shrt;
+    navigator.clipboard.writeText(copyText);
+    e.target.classList.add(classes["copied"]);
+    e.target.textContent = "Copied!";
   };
   return (
     <div className={classes.cardContainer}>
