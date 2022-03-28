@@ -39,11 +39,12 @@
 .heroImgWrap {
   position: relative;
   right: -5rem;
-  height: auto;
   width: 120%;
 }
 
 .heroImgWrap img {
-  max-inline-size: 100%;
-  block-size: auto;
+  height: auto;
+  width: 100%;
 }
+
+/* first breakpoint at 835px? */

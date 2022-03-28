@@ -1,28 +1,34 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import LinkCard from "./LinkCard";
 import classes from "./URLInput.module.css";
 
-const URLInput = (props) => {
+const URLInput = () => {
+  const savedItems = JSON.parse(localStorage.getItem("shortened"));
   const [link, setLink] = useState("");
-  const [shortened, setShortened] = useState([]);
+  const [shortened, setShortened] = useState(savedItems || []);
+
+  useEffect(() => {
+    const items = JSON.parse(localStorage.getItem("shortened"));
+    if (items) {
+      setShortened(items);
+    }
+  }, []);
+
+  useEffect(() => {
+    localStorage.setItem("shortened", JSON.stringify(shortened));
+  }, [shortened]);
 
   const input = document.querySelector("#inputLink");
   const errorMsg = document.querySelector("#error");
 
-  // useEffect(() => {
-  //   const list = localStorage.getItem('shortened');
-
-  // })
-
   const isUrl = (s) => {
     var regexp =
-      /(ftp|http|https):\/\/(\w+:{0,1}\w*@)?(\S+)(:[0-9]+)?(\/|\/([\w#!:.?+=&%@!\-\/]))?/;
+      /(ftp|http|https):\/\/(\w+:{0,1}\w*@)?(\S+)(:[0-9]+)?(\/|\/([\w#!:.?+=&%@!\-\/]))?/; // eslint-disable-line
     return regexp.test(s);
   };
 
   const submitHandler = (e) => {
     e.preventDefault();
-
     if (!isUrl(link)) {
       input.classList.add(classes["invalid"]);
       errorMsg.style.display = "block";
@@ -41,7 +47,6 @@ const URLInput = (props) => {
           errorMsg.style.display = "none";
           setShortened((prevArr) => [...prevArr, shortObj]);
           input.value = "";
-          console.log("complete");
         });
     }
   };
