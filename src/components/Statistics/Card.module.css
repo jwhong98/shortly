@@ -32,7 +32,15 @@
 }
 
 .card p {
-  font-size: 0.91rem;
+  font-size: 0.9rem;
   color: hsl(257, 7%, 63%);
   line-height: 1.75;
+}
+
+@media screen and (max-width: 880px) {
+  .card {
+    text-align: center;
+    align-items: center;
+    max-width: 100%;
+  }
 }

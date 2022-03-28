@@ -10,7 +10,7 @@ const LinkCard = (props) => {
   };
   return (
     <div className={classes.cardContainer}>
-      {props.url}
+      <p className={classes.original}>{props.url}</p>
       <div className={classes.wrap}>
         <p className={classes.short} id="shortLink">
           {props.shrt}

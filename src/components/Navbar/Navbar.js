@@ -18,6 +18,9 @@ const Navbar = () => {
             <button className={classes.button}>Sign Up</button>
           </div>
         </div>
+        <div className={classes.toggle}>
+          <ion-icon className={classes.hamburger} name="menu"></ion-icon>
+        </div>
       </div>
     </nav>
   );

@@ -71,3 +71,27 @@ nav {
 .button:hover {
   opacity: 0.5;
 }
+
+.toggle {
+  display: none;
+}
+
+@media screen and (max-width: 640px) {
+  .navMenu {
+    display: none;
+  }
+
+  .user {
+    display: none;
+  }
+
+  .toggle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  ion-icon {
+    font-size: 2rem;
+  }
+}
