@@ -48,3 +48,32 @@
 }
 
 /* first breakpoint at 835px? */
+
+@media screen and (max-width: 880px) {
+  .heroContainer {
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 2rem;
+  }
+  .heroImgWrap {
+    width: 80%;
+  }
+  .heroTextWrap {
+    max-width: 600px;
+    text-align: center;
+    align-items: center;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .heroTextWrap {
+    max-width: 500px;
+  }
+  .heroTextWrap h1 {
+    font-size: 2.5rem;
+  }
+
+  .heroTextWrap p {
+    font-size: 1rem;
+  }
+}

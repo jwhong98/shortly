@@ -3,7 +3,6 @@
   align-items: center;
   justify-content: center;
   padding: 5rem 20px;
-  /* background: rgba(158, 154, 167, 0.3); */
   background: #eff1f7;
 }
 
@@ -28,7 +27,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 3rem;
+  margin-top: 2rem;
   max-width: 520px;
   text-align: center;
   justify-content: space-between;
@@ -70,4 +69,37 @@
   bottom: auto;
   background-color: hsl(180, 66%, 49%);
   height: 0.5rem;
+}
+
+@media screen and (max-width: 880px) {
+  .statsTextWrap {
+    margin-bottom: 2rem;
+  }
+  .dataWrap {
+    flex-direction: column;
+    gap: 5rem;
+  }
+
+  .dataWrap div:nth-child(3) {
+    margin-top: 0;
+  }
+
+  .dataWrap div:nth-child(4) {
+    margin-top: 0;
+  }
+
+  .line {
+    height: 100%;
+    width: 0.5rem;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .statsTextWrap h3 {
+    font-size: 1.75rem;
+  }
+
+  .statsTextWrap p {
+    font-size: 0.9rem;
+  }
 }

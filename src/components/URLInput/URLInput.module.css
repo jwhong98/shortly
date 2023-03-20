@@ -4,7 +4,6 @@
   align-items: center;
   justify-content: center;
   position: relative;
-  /* top: 3.5rem; */
   padding: 0 20px;
   background: #eff1f7;
 }
@@ -40,8 +39,13 @@ form {
 
 .formInput {
   width: 80%;
-  padding: 0.5rem 1.5rem;
-  border-radius: 10px;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  border: none;
+}
+
+.formInput::placeholder {
+  color: rgba(158, 154, 167, 0.8);
 }
 
 .invalid {
@@ -67,7 +71,7 @@ form {
 .buttonContainer {
   width: 20%;
   background: #fff;
-  border-radius: 10px;
+  border-radius: 5px;
 }
 
 .buttonContainer button {
@@ -75,7 +79,7 @@ form {
   height: 100%;
   color: #fff;
   background: hsl(180, 66%, 49%);
-  border-radius: 10px;
+  border-radius: 5px;
   font-weight: 700;
   border: none;
   cursor: pointer;
@@ -94,4 +98,31 @@ form {
   flex-direction: column;
   align-items: center;
   gap: 0.75rem;
+}
+
+@media screen and (max-width: 640px) {
+  .inputSectionContainer {
+    padding: 1rem;
+  }
+
+  .inputWrap {
+    margin-bottom: 1rem;
+  }
+
+  form {
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+
+  .formInput {
+    width: 100%;
+  }
+
+  .buttonContainer {
+    width: 100%;
+  }
+
+  .buttonContainer button {
+    padding: 0.5rem 1.5rem;
+  }
 }

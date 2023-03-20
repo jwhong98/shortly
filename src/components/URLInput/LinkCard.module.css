@@ -8,6 +8,13 @@
   background: #fff;
 }
 
+.original {
+  max-width: 700px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
 .wrap {
   display: flex;
   align-items: center;
@@ -39,4 +46,36 @@
 
 .copied {
   background-color: hsl(257, 27%, 26%);
+}
+
+@media screen and (max-width: 880px) {
+  .original {
+    width: 300px;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .cardContainer {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0;
+  }
+
+  .original {
+    border-bottom: 1px solid rgba(158, 154, 167, 0.3);
+    width: 100%;
+    padding: 1rem;
+  }
+
+  .wrap {
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    gap: 0.5rem;
+    padding: 0.5rem 1rem 1rem 1rem;
+  }
+
+  .copyBtn {
+    width: 100%;
+  }
 }
